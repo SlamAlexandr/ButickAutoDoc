@@ -1,6 +1,22 @@
 @use "../../styles/variables.scss" as *;
 
+@media all and ($desktop) {
+  .page#quartz-root {
+    max-width: 1920px!important;
+    #quartz-body {
+      grid-template:
+        "grid-sidebar-left grid-header grid-sidebar-right"
+        "grid-sidebar-left grid-center grid-sidebar-right"
+        "grid-sidebar-left grid-footer grid-sidebar-right" / 25% auto 25%;
+    }
+    .graph>.graph-outer {
+      height: 400px;
+    }
+  }
+}
+
 @media all and ($mobile) {
+
   .page > #quartz-body {
     // Shift page position when toggling Explorer on mobile.
     & > :not(.sidebar.left:has(.explorer)) {
