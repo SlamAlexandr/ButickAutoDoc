@@ -45,14 +45,14 @@ const defaultOptions: GraphOptions = {
   globalGraph: {
     drag: true,
     zoom: true,
-    depth: -1,
+    depth: 3,
     scale: 0.9,
     repelForce: 0.5,
     centerForce: 0.2,
-    linkDistance: 30,
-    fontSize: 0.6,
+    linkDistance: 80,
+    fontSize: 0.45,
     opacityScale: 1,
-    showTags: true,
+    showTags: false,
     removeTags: [],
     focusOnHover: true,
     enableRadial: true,
@@ -62,7 +62,7 @@ const defaultOptions: GraphOptions = {
 export default ((opts?: Partial<GraphOptions>) => {
   const Graph: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
     const localGraph = { ...defaultOptions.localGraph, ...opts?.localGraph }
-    const globalGraph = { ...defaultOptions.globalGraph, ...opts?.globalGraph }
+    const globalGraph = { ...defaultOptions.globalGraph, ...opts?.localGraph }
     return (
       <div class={classNames(displayClass, "graph")}>
         <h3>{i18n(cfg.locale).components.graph.title}</h3>

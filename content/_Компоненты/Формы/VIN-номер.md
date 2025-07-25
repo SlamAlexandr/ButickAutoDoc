@@ -1,3 +1,2 @@
 Дает возможность пользователю ввести "VIN-номер".
-#### Превью.
-![[_Assets/Pasted image 20250624165843.png]]
+##### [Дизайн](https://www.figma.com/design/hfOLpuknYFCLrjWgSFREdZ/BUTIKAVTO--%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB-?node-id=4011-40849&t=xE5Csd1Rrt7x8FEI-4)
